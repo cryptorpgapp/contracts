@@ -1,16 +1,6 @@
-/**
- *Submitted for verification at BscScan.com on 2021-12-09
-*/
+// SPDX-License-Identifier: GPL-3.0
 
-// File: contract-fef5dcfdb7_flat.sol
-
-
-// File: @openzeppelin/contracts/utils/Context.sol
-
-
-// OpenZeppelin Contracts v4.4.0 (utils/Context.sol)
-
-pragma solidity ^0.8.0;
+pragma solidity 0.8.7;
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -37,7 +27,7 @@ abstract contract Context {
 
 // OpenZeppelin Contracts v4.4.0 (token/ERC20/IERC20.sol)
 
-pragma solidity ^0.8.0;
+pragma solidity 0.8.7;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -122,7 +112,7 @@ interface IERC20 {
 
 // OpenZeppelin Contracts v4.4.0 (token/ERC20/extensions/IERC20Metadata.sol)
 
-pragma solidity ^0.8.0;
+pragma solidity 0.8.7;
 
 
 /**
@@ -152,8 +142,7 @@ interface IERC20Metadata is IERC20 {
 
 // OpenZeppelin Contracts v4.4.0 (token/ERC20/ERC20.sol)
 
-pragma solidity ^0.8.0;
-
+pragma solidity 0.8.7;
 
 
 
@@ -507,12 +496,11 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
 // File: contract-fef5dcfdb7.sol
 
-
-pragma solidity ^0.8.2;
+pragma solidity 0.8.7;
 
 
 contract CryptoRPG is ERC20 {
     constructor() ERC20("CryptoRPG", "RPG") {
-        _mint(msg.sender, 21000000000 * 10 ** decimals());
+        _mint(msg.sender, 1_000_000_000 * 10 ** decimals());
     }
 }
