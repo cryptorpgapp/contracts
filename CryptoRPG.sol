@@ -27,8 +27,6 @@ abstract contract Context {
 
 // OpenZeppelin Contracts v4.4.0 (token/ERC20/IERC20.sol)
 
-pragma solidity 0.8.7;
-
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -112,8 +110,6 @@ interface IERC20 {
 
 // OpenZeppelin Contracts v4.4.0 (token/ERC20/extensions/IERC20Metadata.sol)
 
-pragma solidity 0.8.7;
-
 
 /**
  * @dev Interface for the optional metadata functions from the ERC20 standard.
@@ -141,10 +137,6 @@ interface IERC20Metadata is IERC20 {
 
 
 // OpenZeppelin Contracts v4.4.0 (token/ERC20/ERC20.sol)
-
-pragma solidity 0.8.7;
-
-
 
 /**
  * @dev Implementation of the {IERC20} interface.
@@ -495,9 +487,6 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 }
 
 // File: contract-fef5dcfdb7.sol
-
-pragma solidity 0.8.7;
-
 
 contract CryptoRPG is ERC20 {
     constructor() ERC20("CryptoRPG", "RPG") {
