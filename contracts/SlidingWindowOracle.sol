@@ -38,6 +38,7 @@ abstract contract SlidingWindowOracle is OwnableUpgradeable {
     // update the cumulative price for the observation at the current timestamp. each observation is updated at most
     // once per epoch period.
     function update(address pair) public {
+        require(periodSize > 0);
 
         // populate the array with empty observations (first call only)
         for (uint i = pairObservations[pair].length; i < granularity; i++) {
